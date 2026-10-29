@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Chris-tastic World! Experiments</title>
+<link href="assets/images/favicon.png" rel="icon" type="image/png"/>
+<link href="assets/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="page">
+<div class="topbar"><img alt="Chris-tastic World header banner" src="assets/images/header-banner.png"/></div>
+<div class="ticker"><span>⚗ Chris-tastic World! • Retro office site • Science fun • Clickable navigation • Every experiment now shows supplies, steps, and difficulty blocks • Built in a classic 1998–2003 style! ⚗</span></div>
+<div class="layout">
+<nav aria-label="Main navigation" class="nav">
+<div class="nav-panel">
+<img alt="Chris-tastic World navigation panel" src="assets/images/left-nav-panel.png"/>
+<div aria-label="Visitor counter placeholder" class="counter-overlay"><div class="label">You are visitor #</div><div class="counter-display"><span id="visitorCount"> </span></div><div class="counter-since">since 2026</div></div>
+<a aria-label="Home" class="nav-hotspot" href="index.html" style="top:8px;height:50px;">Home</a><a aria-label="Experiments" class="nav-hotspot" href="experiments.html" style="top:65px;height:50px;">Experiments</a><a aria-label="Characters" class="nav-hotspot" href="characters.html" style="top:122px;height:50px;">Characters</a><a aria-label="Episode Guide" class="nav-hotspot" href="episode-guide.html" style="top:179px;height:50px;">Episode Guide</a><a aria-label="Weird Science Facts" class="nav-hotspot" href="facts.html" style="top:236px;height:50px;">Weird Science Facts</a><a aria-label="Downloads" class="nav-hotspot" href="downloads.html" style="top:293px;height:50px;">Downloads</a><a aria-label="Gallery" class="nav-hotspot" href="gallery.html" style="top:350px;height:50px;">Gallery</a><a aria-label="Guestbook" class="nav-hotspot" href="guestbook.html" style="top:407px;height:50px;">Guestbook</a><a aria-label="Email" class="nav-hotspot" href="email.html" style="top:464px;height:50px;">Email</a><a aria-label="Links" class="nav-hotspot" href="links.html" style="top:521px;height:50px;">Links</a>
+</div>
+<div class="nav-mobile"><a href="index.html">Home</a><a href="experiments.html">Experiments</a><a href="characters.html">Characters</a><a href="episode-guide.html">Episode Guide</a><a href="facts.html">Weird Science Facts</a><a href="downloads.html">Downloads</a><a href="gallery.html">Gallery</a><a href="guestbook.html">Guestbook</a><a href="email.html">Email</a><a href="links.html">Links</a><a href="videos.html">Videos</a></div>
+<div class="counter-note">Explore the Chris-tastic lab menu.</div>
+<div class="extra-nav-buttons"><a href="videos.html">▶ Open Videos</a></div>
+</nav>
+<main class="main">
+<section class="card">
+<div class="section-banner"><img alt="Enter the Lab banner" src="assets/images/enter-lab-banner.png"/></div>
+<h1>Experiments</h1>
+<p>This page includes every Chris-tastic World experiment poster, plus supplies needed, quick how-to steps, and an easy-to-hard difficulty meter shown with blocks on each experiment.</p>
+<div class="callout"><strong>Total posters on site:</strong> 55 retro experiment posters with their own dedicated pages. Click any poster image to view it full size, or use Open Page for the full instructions.</div>
+<div class="exp-tools">
+<input id="experimentSearch" oninput="filterExperiments()" placeholder="Search experiments by name, supply, topic, or keyword..." type="search"/>
+<select id="difficultyFilter" onchange="filterExperiments()">
+<option value="all">All difficulty levels</option>
+<option value="Easy">Easy</option>
+<option value="Easy-Medium">Easy-Medium</option>
+<option value="Medium">Medium</option>
+<option value="Medium-Hard">Medium-Hard</option>
+<option value="Hard">Hard</option>
+</select>
+<button class="btn" onclick="randomExperiment()" type="button">Random Experiment</button>
+<button class="btn" onclick="resetExperimentFilters()" type="button">Reset</button>
+<div class="exp-count" id="experimentResultCount">Showing experiments</div>
+</div><div class="exp-grid"><div class="exp-card" data-difficulty="Easy">
+<a aria-label="View full size image of Baking Soda Volcano" class="exp-image-link" href="assets/images/experiment-baking-soda-volcano.png" target="_blank"><img alt="Baking Soda Volcano poster" src="assets/images/experiment-baking-soda-volcano.png"/></a>
+<h3>Baking Soda Volcano</h3>
+<p>Create a foamy eruption and talk about acid-base reactions.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy</span><span aria-label="Difficulty 1 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Baking soda • Vinegar • Dish soap • Cup or volcano model</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Place baking soda in a cup or volcano container.</li><li>Add a little dish soap if desired.</li><li>Pour in vinegar and watch the fizzy eruption.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/baking-soda-volcano.html">Open Page</a><a class="btn" href="assets/images/experiment-baking-soda-volcano.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy-Medium">
+<a aria-label="View full size image of Balloon Blow-Up Bottle" class="exp-image-link" href="assets/images/experiment-balloon-blow-up-bottle.png" target="_blank"><img alt="Balloon Blow-Up Bottle poster" src="assets/images/experiment-balloon-blow-up-bottle.png"/></a>
+<h3>Balloon Blow-Up Bottle</h3>
+<p>Use a simple reaction to inflate a balloon without blowing into it.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy-Medium</span><span aria-label="Difficulty 2 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Bottle • Balloon • Baking soda • Vinegar</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Pour vinegar into a bottle.</li><li>Put baking soda into a balloon and attach it to the bottle.</li><li>Lift the balloon so the baking soda drops in and watch it inflate.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/balloon-blow-up-bottle.html">Open Page</a><a class="btn" href="assets/images/experiment-balloon-blow-up-bottle.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy-Medium">
+<a aria-label="View full size image of Chris's Balloon Rocket Race" class="exp-image-link" href="assets/images/experiment-balloon-rocket-race.png" target="_blank"><img alt="Chris's Balloon Rocket Race poster" src="assets/images/experiment-balloon-rocket-race.png"/></a>
+<h3>Chris's Balloon Rocket Race</h3>
+<p>Launch a balloon down a string track and learn how air pressure creates thrust.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy-Medium</span><span aria-label="Difficulty 2 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Balloon • String • Tape • Straw</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Thread the string through a straw and pull the string tight between two points.</li><li>Tape an inflated balloon to the straw without tying the end.</li><li>Let go and watch the balloon rocket race across the string.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/balloon-rocket-race.html">Open Page</a><a class="btn" href="assets/images/experiment-balloon-rocket-race.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy-Medium">
+<a aria-label="View full size image of Balloon Skewer Surprise" class="exp-image-link" href="assets/images/experiment-balloon-skewer-surprise.png" target="_blank"><img alt="Balloon Skewer Surprise poster" src="assets/images/experiment-balloon-skewer-surprise.png"/></a>
+<h3>Balloon Skewer Surprise</h3>
+<p>Push a skewer through the thick spots of a balloon without popping it.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy-Medium</span><span aria-label="Difficulty 2 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Balloon • Wooden skewer • A little oil optional</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Inflate a balloon and tie it off.</li><li>Carefully push a skewer through the thicker latex near the knot and top.</li><li>Watch the balloon stay inflated when the skewer passes through the thick spots.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/balloon-skewer-surprise.html">Open Page</a><a class="btn" href="assets/images/experiment-balloon-skewer-surprise.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy">
+<a aria-label="View full size image of Bean in a Bag" class="exp-image-link" href="assets/images/experiment-bean-in-a-bag.png" target="_blank"><img alt="Bean in a Bag poster" src="assets/images/experiment-bean-in-a-bag.png"/></a>
+<h3>Bean in a Bag</h3>
+<p>Watch a seed sprout where everyone can see the roots and stem grow.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy</span><span aria-label="Difficulty 1 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Bean seed • Damp paper towel • Zip bag • Tape</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Wet a paper towel and place it in a zip bag.</li><li>Add a bean seed between the towel and the bag side.</li><li>Tape it to a window and watch the bean sprout.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/bean-in-a-bag.html">Open Page</a><a class="btn" href="assets/images/experiment-bean-in-a-bag.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy">
+<a aria-label="View full size image of Bottle Tornado" class="exp-image-link" href="assets/images/experiment-bottle-tornado.png" target="_blank"><img alt="Bottle Tornado poster" src="assets/images/experiment-bottle-tornado.png"/></a>
+<h3>Bottle Tornado</h3>
+<p>Spin water inside a bottle and create a swirling mini tornado.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy</span><span aria-label="Difficulty 1 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Clear bottle • Water • Optional glitter</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Fill a clear bottle partway with water.</li><li>Add glitter if desired and cap it.</li><li>Swirl the bottle in a circle to form a tornado funnel.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/bottle-tornado.html">Open Page</a><a class="btn" href="assets/images/experiment-bottle-tornado.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy">
+<a aria-label="View full size image of Little Lab Helper Bubble Test" class="exp-image-link" href="assets/images/experiment-bubble-test.png" target="_blank"><img alt="Little Lab Helper Bubble Test poster" src="assets/images/experiment-bubble-test.png"/></a>
+<h3>Little Lab Helper Bubble Test</h3>
+<p>See which water temperature makes fizzy bubbles react faster.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy</span><span aria-label="Difficulty 1 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> 2 clear cups • Warm water • Cold water • Fizz tablet</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Fill one cup with cold water and another with warm water.</li><li>Drop a fizz tablet into each cup at the same time.</li><li>Compare bubble speed and which reaction finishes first.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/bubble-test.html">Open Page</a><a class="btn" href="assets/images/experiment-bubble-test.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Medium">
+<a aria-label="View full size image of CD Hovercraft Challenge" class="exp-image-link" href="assets/images/experiment-cd-hovercraft-challenge.png" target="_blank"><img alt="CD Hovercraft Challenge poster" src="assets/images/experiment-cd-hovercraft-challenge.png"/></a>
+<h3>CD Hovercraft Challenge</h3>
+<p>Build a tiny hovercraft that glides on a cushion of air.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Medium</span><span aria-label="Difficulty 3 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Old CD or DVD • Balloon • Bottle cap with pull-up spout • Glue</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Glue a pop-top bottle cap to the center of an old CD.</li><li>Stretch a balloon over the cap, then inflate it through the cap.</li><li>Set the hovercraft on a smooth table, open the cap, and watch it glide.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/cd-hovercraft-challenge.html">Open Page</a><a class="btn" href="assets/images/experiment-cd-hovercraft-challenge.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy-Medium">
+<a aria-label="View full size image of Citrus Fizz Rocket" class="exp-image-link" href="assets/images/experiment-citrus-fizz-rocket.png" target="_blank"><img alt="Citrus Fizz Rocket poster" src="assets/images/experiment-citrus-fizz-rocket.png"/></a>
+<h3>Citrus Fizz Rocket</h3>
+<p>Combine citrus juice and fizz for a tangy reaction.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy-Medium</span><span aria-label="Difficulty 2 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Lemon or orange juice • Baking soda • Cup or bottle • Tray</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Pour citrus juice into a cup or bottle.</li><li>Add a spoonful of baking soda.</li><li>Watch the fizzy acid-base reaction bubble up.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/citrus-fizz-rocket.html">Open Page</a><a class="btn" href="assets/images/experiment-citrus-fizz-rocket.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy">
+<a aria-label="View full size image of Coffee Filter Color Split" class="exp-image-link" href="assets/images/experiment-coffee-filter-color-split.png" target="_blank"><img alt="Coffee Filter Color Split poster" src="assets/images/experiment-coffee-filter-color-split.png"/></a>
+<h3>Coffee Filter Color Split</h3>
+<p>Separate marker colors into a rainbow using a coffee filter and water.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy</span><span aria-label="Difficulty 1 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Coffee filters • Washable markers • Water • Small cup or bowl</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Draw a thick marker ring on a coffee filter.</li><li>Dip just the center edge in a little water.</li><li>Watch the colors spread and separate outward.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/coffee-filter-color-split.html">Open Page</a><a class="btn" href="assets/images/experiment-coffee-filter-color-split.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Medium">
+<a aria-label="View full size image of Crystal Salt Shapes" class="exp-image-link" href="assets/images/experiment-crystal-salt-shapes.png" target="_blank"><img alt="Crystal Salt Shapes poster" src="assets/images/experiment-crystal-salt-shapes.png"/></a>
+<h3>Crystal Salt Shapes</h3>
+<p>Grow sparkling crystal shapes over time.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Medium</span><span aria-label="Difficulty 3 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Salt • Warm water • String or pipe cleaner shape • Jar</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Make a warm salt solution until no more salt dissolves.</li><li>Place a string or shaped pipe cleaner into the jar.</li><li>Wait several days for crystals to grow.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/crystal-salt-shapes.html">Open Page</a><a class="btn" href="assets/images/experiment-crystal-salt-shapes.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy">
+<a aria-label="View full size image of Dancing Raisins" class="exp-image-link" href="assets/images/experiment-dancing-raisins.png" target="_blank"><img alt="Dancing Raisins poster" src="assets/images/experiment-dancing-raisins.png"/></a>
+<h3>Dancing Raisins</h3>
+<p>Raisins bounce up and down in fizzy soda as gas bubbles lift and drop them.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy</span><span aria-label="Difficulty 1 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Clear soda • Raisins • Glass</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Pour clear soda into a glass.</li><li>Drop in a few raisins.</li><li>Watch them rise and fall as bubbles stick and pop.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/dancing-raisins.html">Open Page</a><a class="btn" href="assets/images/experiment-dancing-raisins.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy-Medium">
+<a aria-label="View full size image of DIY Compass Quest" class="exp-image-link" href="assets/images/experiment-diy-compass-quest.png" target="_blank"><img alt="DIY Compass Quest poster" src="assets/images/experiment-diy-compass-quest.png"/></a>
+<h3>DIY Compass Quest</h3>
+<p>Magnetize a needle and make your own simple compass.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy-Medium</span><span aria-label="Difficulty 2 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Needle • Magnet • Small piece of cork or foam • Bowl of water</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Rub the needle with a magnet several times in one direction.</li><li>Push it through a tiny piece of cork or foam.</li><li>Float it on water and watch it line up north-south.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/diy-compass-quest.html">Open Page</a><a class="btn" href="assets/images/experiment-diy-compass-quest.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Medium">
+<a aria-label="View full size image of Egg Drop Landing Challenge" class="exp-image-link" href="assets/images/experiment-egg-drop-landing-challenge.png" target="_blank"><img alt="Egg Drop Landing Challenge poster" src="assets/images/experiment-egg-drop-landing-challenge.png"/></a>
+<h3>Egg Drop Landing Challenge</h3>
+<p>Build a soft landing system that protects an egg from a drop.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Medium</span><span aria-label="Difficulty 3 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Raw egg • Paper or recycled materials • Tape • Optional parachute materials</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Build a protective container or parachute for the egg.</li><li>Choose a safe drop area and place a soft landing pad below.</li><li>Drop the egg contraption and see if the egg survives.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/egg-drop-landing-challenge.html">Open Page</a><a class="btn" href="assets/images/experiment-egg-drop-landing-challenge.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy">
+<a aria-label="View full size image of Egg Float Challenge" class="exp-image-link" href="assets/images/experiment-egg-float-challenge.png" target="_blank"><img alt="Egg Float Challenge poster" src="assets/images/experiment-egg-float-challenge.png"/></a>
+<h3>Egg Float Challenge</h3>
+<p>Compare fresh water and salt water to see where an egg sinks or floats.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy</span><span aria-label="Difficulty 1 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> 2 eggs • Fresh water • Salt • 2 clear glasses</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Fill two glasses with water.</li><li>Add lots of salt to one glass and stir well.</li><li>Place an egg in each glass and compare what happens.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/egg-float-challenge.html">Open Page</a><a class="btn" href="assets/images/experiment-egg-float-challenge.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy-Medium">
+<a aria-label="View full size image of Floating Dry Erase Drawing" class="exp-image-link" href="assets/images/experiment-floating-dry-erase-drawing.png" target="_blank"><img alt="Floating Dry Erase Drawing poster" src="assets/images/experiment-floating-dry-erase-drawing.png"/></a>
+<h3>Floating Dry Erase Drawing</h3>
+<p>Draw simple shapes and watch them float off the plate when water is added.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy-Medium</span><span aria-label="Difficulty 2 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Dry erase markers • Smooth plate • Water</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Draw a simple shape on a smooth plate with a dry erase marker.</li><li>Slowly add water to the plate.</li><li>Watch the drawing lift off and float.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/floating-dry-erase-drawing.html">Open Page</a><a class="btn" href="assets/images/experiment-floating-dry-erase-drawing.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy-Medium">
+<a aria-label="View full size image of Floating Paperclip Magic" class="exp-image-link" href="assets/images/experiment-floating-paperclip-magic.png" target="_blank"><img alt="Floating Paperclip Magic poster" src="assets/images/experiment-floating-paperclip-magic.png"/></a>
+<h3>Floating Paperclip Magic</h3>
+<p>Use surface tension to make a metal paperclip float on water.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy-Medium</span><span aria-label="Difficulty 2 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Paperclip • Bowl of water • Tissue or dropper</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Fill a bowl with water.</li><li>Carefully lower a paperclip onto the surface using tissue or a gentle hand.</li><li>Observe how surface tension helps it float.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/floating-paperclip-magic.html">Open Page</a><a class="btn" href="assets/images/experiment-floating-paperclip-magic.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Medium-Hard">
+<a aria-label="View full size image of Frozen Bubble Watch" class="exp-image-link" href="assets/images/experiment-frozen-bubble-watch.png" target="_blank"><img alt="Frozen Bubble Watch poster" src="assets/images/experiment-frozen-bubble-watch.png"/></a>
+<h3>Frozen Bubble Watch</h3>
+<p>Blow bubbles on a very cold day and watch icy patterns form.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Medium-Hard</span><span aria-label="Difficulty 4 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Bubble solution • Bubble wand • Cold day</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Go outside on a very cold day.</li><li>Blow bubbles gently onto a flat surface.</li><li>Watch for ice crystals and freezing patterns.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/frozen-bubble-watch.html">Open Page</a><a class="btn" href="assets/images/experiment-frozen-bubble-watch.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Medium">
+<a aria-label="View full size image of Invisible Ink Lemon Notes" class="exp-image-link" href="assets/images/experiment-invisible-ink-lemon-notes.png" target="_blank"><img alt="Invisible Ink Lemon Notes poster" src="assets/images/experiment-invisible-ink-lemon-notes.png"/></a>
+<h3>Invisible Ink Lemon Notes</h3>
+<p>Write a hidden message and reveal it with gentle heat.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Medium</span><span aria-label="Difficulty 3 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Lemon juice • Cotton swab • Paper • Adult heat help</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Dip a cotton swab into lemon juice and write a message.</li><li>Let the paper dry completely.</li><li>With adult help, warm the paper to reveal the hidden writing.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/invisible-ink-lemon-notes.html">Open Page</a><a class="btn" href="assets/images/experiment-invisible-ink-lemon-notes.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy-Medium">
+<a aria-label="View full size image of Julianna's Color-Swirl Flask" class="exp-image-link" href="assets/images/experiment-color-swirl-julianna.png" target="_blank"><img alt="Julianna's Color-Swirl Flask poster" src="assets/images/experiment-color-swirl-julianna.png"/></a>
+<h3>Julianna's Color-Swirl Flask</h3>
+<p>Mix colorful liquids with different densities and watch bright layers float inside one giant flask.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy-Medium</span><span aria-label="Difficulty 2 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Clear bottle or flask • Water • Food coloring • Cooking oil</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Fill part of a clear flask with colored water.</li><li>Slowly add oil or another liquid with a different density.</li><li>Swirl gently and watch the layers and colors interact.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/julianna-color-swirl-flask.html">Open Page</a><a class="btn" href="assets/images/experiment-color-swirl-julianna.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Medium-Hard">
+<a aria-label="View full size image of Lemon Battery Power-Up" class="exp-image-link" href="assets/images/experiment-lemon-battery-power-up.png" target="_blank"><img alt="Lemon Battery Power-Up poster" src="assets/images/experiment-lemon-battery-power-up.png"/></a>
+<h3>Lemon Battery Power-Up</h3>
+<p>Use lemons, metal strips, and wires to make a tiny battery.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Medium-Hard</span><span aria-label="Difficulty 4 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Lemons • Copper strips or pennies • Zinc nails or galvanized nails • Wires and small LED</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Press one copper piece and one zinc piece into each lemon.</li><li>Connect the lemons in a chain with wires.</li><li>Attach the final wires to a small LED and see if it lights.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/lemon-battery-power-up.html">Open Page</a><a class="btn" href="assets/images/experiment-lemon-battery-power-up.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy">
+<a aria-label="View full size image of Magic Milk Color Burst" class="exp-image-link" href="assets/images/experiment-magic-milk-color-burst.png" target="_blank"><img alt="Magic Milk Color Burst poster" src="assets/images/experiment-magic-milk-color-burst.png"/></a>
+<h3>Magic Milk Color Burst</h3>
+<p>Watch dish soap push food coloring across a milk surface in wild swirls.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy</span><span aria-label="Difficulty 1 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Milk • Food coloring • Dish soap • Cotton swab</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Pour milk into a shallow dish.</li><li>Add drops of food coloring around the surface.</li><li>Touch the colors with a soap-dipped cotton swab and watch the burst.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/magic-milk-color-burst.html">Open Page</a><a class="btn" href="assets/images/experiment-magic-milk-color-burst.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy">
+<a aria-label="View full size image of Magnet Treasure Hunt" class="exp-image-link" href="assets/images/experiment-magnet-treasure-hunt.png" target="_blank"><img alt="Magnet Treasure Hunt poster" src="assets/images/experiment-magnet-treasure-hunt.png"/></a>
+<h3>Magnet Treasure Hunt</h3>
+<p>Search for hidden magnetic treasure and sort what sticks.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy</span><span aria-label="Difficulty 1 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Magnet wand • Mixed small objects • Tray or bin</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Place different objects in a tray.</li><li>Use a magnet to “hunt” for the items that stick.</li><li>Sort the magnetic and non-magnetic objects into groups.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/magnet-treasure-hunt.html">Open Page</a><a class="btn" href="assets/images/experiment-magnet-treasure-hunt.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy-Medium">
+<a aria-label="View full size image of Marshmallow Catapult" class="exp-image-link" href="assets/images/experiment-marshmallow-catapult.png" target="_blank"><img alt="Marshmallow Catapult poster" src="assets/images/experiment-marshmallow-catapult.png"/></a>
+<h3>Marshmallow Catapult</h3>
+<p>Build a simple launcher and test force, angle, and distance.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy-Medium</span><span aria-label="Difficulty 2 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Popsicle sticks • Rubber bands • Plastic spoon • Mini marshmallows</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Stack and rubber-band popsicle sticks into a small catapult base.</li><li>Attach a spoon to the throwing arm.</li><li>Launch mini marshmallows and test which angles go farthest.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/marshmallow-catapult.html">Open Page</a><a class="btn" href="assets/images/experiment-marshmallow-catapult.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy-Medium">
+<a aria-label="View full size image of Mentos Geyser Blast" class="exp-image-link" href="assets/images/experiment-mentos-geyser-blast.png" target="_blank"><img alt="Mentos Geyser Blast poster" src="assets/images/experiment-mentos-geyser-blast.png"/></a>
+<h3>Mentos Geyser Blast</h3>
+<p>Drop mints into soda and send a fountain skyward.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy-Medium</span><span aria-label="Difficulty 2 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Diet soda bottle • Mentos candies • Outdoor space • Safety goggles</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Take the soda bottle outside and set it on the ground.</li><li>Quickly drop several Mentos into the bottle.</li><li>Step back and watch the fizzy geyser blast upward.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/mentos-geyser-blast.html">Open Page</a><a class="btn" href="assets/images/experiment-mentos-geyser-blast.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Medium-Hard">
+<a aria-label="View full size image of Milk Plastic Maker" class="exp-image-link" href="assets/images/experiment-milk-plastic-maker.png" target="_blank"><img alt="Milk Plastic Maker poster" src="assets/images/experiment-milk-plastic-maker.png"/></a>
+<h3>Milk Plastic Maker</h3>
+<p>Turn milk and vinegar into a moldable solid.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Medium-Hard</span><span aria-label="Difficulty 4 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Warm milk • Vinegar • Bowl • Strainer or paper towel</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Warm the milk and pour it into a bowl.</li><li>Add vinegar and stir to form curds.</li><li>Strain the curds and shape the milk plastic.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/milk-plastic-maker.html">Open Page</a><a class="btn" href="assets/images/experiment-milk-plastic-maker.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Medium">
+<a aria-label="View full size image of Mini Marshmallow Vacuum Pop" class="exp-image-link" href="assets/images/experiment-mini-marshmallow-vacuum-pop.png" target="_blank"><img alt="Mini Marshmallow Vacuum Pop poster" src="assets/images/experiment-mini-marshmallow-vacuum-pop.png"/></a>
+<h3>Mini Marshmallow Vacuum Pop</h3>
+<p>Show how changing pressure can make mini marshmallows puff up dramatically.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Medium</span><span aria-label="Difficulty 3 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Mini marshmallows • Large syringe or vacuum chamber • Safety goggles</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Place marshmallows inside a clear syringe or chamber.</li><li>Reduce the air pressure by pulling the plunger or using a pump.</li><li>Watch the marshmallows expand, then shrink again when pressure returns.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/mini-marshmallow-vacuum-pop.html">Open Page</a><a class="btn" href="assets/images/experiment-mini-marshmallow-vacuum-pop.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy">
+<a aria-label="View full size image of Oobleck Squeeze Lab" class="exp-image-link" href="assets/images/experiment-oobleck-squeeze-lab.png" target="_blank"><img alt="Oobleck Squeeze Lab poster" src="assets/images/experiment-oobleck-squeeze-lab.png"/></a>
+<h3>Oobleck Squeeze Lab</h3>
+<p>Make a goo that feels solid when squeezed but drips when relaxed.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy</span><span aria-label="Difficulty 1 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Cornstarch • Water • Bowl</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Mix cornstarch with a smaller amount of water in a bowl.</li><li>Stir until it becomes a smooth goo.</li><li>Squeeze it quickly, then let it drip slowly through your fingers.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/oobleck-squeeze-lab.html">Open Page</a><a class="btn" href="assets/images/experiment-oobleck-squeeze-lab.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy-Medium">
+<a aria-label="View full size image of Paper Bridge Challenge" class="exp-image-link" href="assets/images/experiment-paper-bridge-challenge.png" target="_blank"><img alt="Paper Bridge Challenge poster" src="assets/images/experiment-paper-bridge-challenge.png"/></a>
+<h3>Paper Bridge Challenge</h3>
+<p>Fold paper in clever ways to build a surprisingly strong bridge.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy-Medium</span><span aria-label="Difficulty 2 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Paper sheets • Small cups or blocks • Coins or small weights</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Span two supports with a flat paper bridge and test its strength.</li><li>Refold the paper into shapes like fans or tubes.</li><li>Compare which bridge design holds the most weight.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/paper-bridge-challenge.html">Open Page</a><a class="btn" href="assets/images/experiment-paper-bridge-challenge.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy">
+<a aria-label="View full size image of Paper Helicopter Spin Test" class="exp-image-link" href="assets/images/experiment-paper-helicopter-spin-test.png" target="_blank"><img alt="Paper Helicopter Spin Test poster" src="assets/images/experiment-paper-helicopter-spin-test.png"/></a>
+<h3>Paper Helicopter Spin Test</h3>
+<p>Build spinning paper copters and test which design stays up longest.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy</span><span aria-label="Difficulty 1 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Paper • Scissors • Paper clips</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Cut and fold a simple paper helicopter shape.</li><li>Drop it from a height and watch it spin down.</li><li>Change the size or weight and compare the results.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/paper-helicopter-spin-test.html">Open Page</a><a class="btn" href="assets/images/experiment-paper-helicopter-spin-test.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy-Medium">
+<a aria-label="View full size image of Pencil Through Water Bag" class="exp-image-link" href="assets/images/experiment-pencil-through-water-bag.png" target="_blank"><img alt="Pencil Through Water Bag poster" src="assets/images/experiment-pencil-through-water-bag.png"/></a>
+<h3>Pencil Through Water Bag</h3>
+<p>Push pencils through a water-filled bag and discover why it does not leak.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy-Medium</span><span aria-label="Difficulty 2 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Zip bag with water • Sharp pencils • Paper towels • Adult supervision</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Fill a zip bag with water and seal it.</li><li>Hold the bag over a sink or bowl.</li><li>Carefully push pencils straight through the bag and watch for minimal leaking.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/pencil-through-water-bag.html">Open Page</a><a class="btn" href="assets/images/experiment-pencil-through-water-bag.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy">
+<a aria-label="View full size image of Penny Shine Chemistry" class="exp-image-link" href="assets/images/experiment-penny-shine-chemistry.png" target="_blank"><img alt="Penny Shine Chemistry poster" src="assets/images/experiment-penny-shine-chemistry.png"/></a>
+<h3>Penny Shine Chemistry</h3>
+<p>Make dull pennies shine with a simple cleaning reaction.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy</span><span aria-label="Difficulty 1 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Dirty pennies • Vinegar or lemon juice • Salt • Cup</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Mix a little salt into vinegar or lemon juice.</li><li>Drop the pennies into the solution.</li><li>Rinse them after a few minutes and compare the shine.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/penny-shine-chemistry.html">Open Page</a><a class="btn" href="assets/images/experiment-penny-shine-chemistry.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy">
+<a aria-label="View full size image of Pepper Scatter Trick" class="exp-image-link" href="assets/images/experiment-pepper-scatter-trick.png" target="_blank"><img alt="Pepper Scatter Trick poster" src="assets/images/experiment-pepper-scatter-trick.png"/></a>
+<h3>Pepper Scatter Trick</h3>
+<p>Soap makes floating pepper race away across water like magic.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy</span><span aria-label="Difficulty 1 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Pepper • Dish soap • Bowl of water</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Sprinkle pepper across the surface of a bowl of water.</li><li>Dip one finger in dish soap.</li><li>Touch the water and watch the pepper scatter away.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/pepper-scatter-trick.html">Open Page</a><a class="btn" href="assets/images/experiment-pepper-scatter-trick.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy">
+<a aria-label="View full size image of Prism Sunlight Hunt" class="exp-image-link" href="assets/images/experiment-prism-sunlight-hunt.png" target="_blank"><img alt="Prism Sunlight Hunt poster" src="assets/images/experiment-prism-sunlight-hunt.png"/></a>
+<h3>Prism Sunlight Hunt</h3>
+<p>Use a prism and sunlight to spread white light into a rainbow.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy</span><span aria-label="Difficulty 1 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Glass prism • Sunlight • White paper</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Hold a prism in a beam of sunlight.</li><li>Aim the rainbow onto a white paper surface.</li><li>Move the prism and compare the color patterns.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/prism-sunlight-hunt.html">Open Page</a><a class="btn" href="assets/images/experiment-prism-sunlight-hunt.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Medium">
+<a aria-label="View full size image of Rainbow Density Jar" class="exp-image-link" href="assets/images/experiment-rainbow-density-jar.png" target="_blank"><img alt="Rainbow Density Jar poster" src="assets/images/experiment-rainbow-density-jar.png"/></a>
+<h3>Rainbow Density Jar</h3>
+<p>Stack different liquids in colorful layers and compare their densities.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Medium</span><span aria-label="Difficulty 3 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Honey or corn syrup • Colored water • Dish soap • Vegetable oil</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Pour the heaviest liquid into a clear jar first.</li><li>Slowly add the remaining liquids in density order.</li><li>Observe the colorful layers staying separated.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/rainbow-density-jar.html">Open Page</a><a class="btn" href="assets/images/experiment-rainbow-density-jar.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy-Medium">
+<a aria-label="View full size image of Shadow Sun Clock" class="exp-image-link" href="assets/images/experiment-shadow-sun-clock.png" target="_blank"><img alt="Shadow Sun Clock poster" src="assets/images/experiment-shadow-sun-clock.png"/></a>
+<h3>Shadow Sun Clock</h3>
+<p>Track the Sun by watching how a shadow moves over time.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy-Medium</span><span aria-label="Difficulty 2 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Sunny spot • Stick or pencil • Paper or chalk • Clock</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Stand a stick upright in a sunny spot.</li><li>Mark the tip of its shadow every hour.</li><li>Compare how the shadow moves as the Sun crosses the sky.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/shadow-sun-clock.html">Open Page</a><a class="btn" href="assets/images/experiment-shadow-sun-clock.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy">
+<a aria-label="View full size image of Soap-Powered Boat" class="exp-image-link" href="assets/images/experiment-soap-powered-boat.png" target="_blank"><img alt="Soap-Powered Boat poster" src="assets/images/experiment-soap-powered-boat.png"/></a>
+<h3>Soap-Powered Boat</h3>
+<p>Use a drop of soap to make a paper boat race forward across water.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy</span><span aria-label="Difficulty 1 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Paper boat • Tray of water • Dish soap • Dropper</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Float a small paper boat in a tray of water.</li><li>Place a tiny drop of soap at the back of the boat.</li><li>Watch the boat shoot forward across the water.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/soap-powered-boat.html">Open Page</a><a class="btn" href="assets/images/experiment-soap-powered-boat.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Medium-Hard">
+<a aria-label="View full size image of Solar Smores Oven" class="exp-image-link" href="assets/images/experiment-solar-smores-oven.png" target="_blank"><img alt="Solar Smores Oven poster" src="assets/images/experiment-solar-smores-oven.png"/></a>
+<h3>Solar Smores Oven</h3>
+<p>Use sunlight to warm up a sweet solar treat.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Medium-Hard</span><span aria-label="Difficulty 4 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Pizza box or foil tray • Aluminum foil • Plastic wrap • Crackers, chocolate, marshmallows</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Line a box or tray with foil to reflect sunlight.</li><li>Place crackers, chocolate, and marshmallows inside and cover with plastic wrap.</li><li>Set it in direct sunlight and wait for the treats to warm and melt.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/solar-smores-oven.html">Open Page</a><a class="btn" href="assets/images/experiment-solar-smores-oven.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Medium">
+<a aria-label="View full size image of Sound Wave Salt Dance" class="exp-image-link" href="assets/images/experiment-sound-wave-salt-dance.png" target="_blank"><img alt="Sound Wave Salt Dance poster" src="assets/images/experiment-sound-wave-salt-dance.png"/></a>
+<h3>Sound Wave Salt Dance</h3>
+<p>See sound vibrations by making salt dance on stretched plastic wrap.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Medium</span><span aria-label="Difficulty 3 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Speaker • Bowl or box opening • Plastic wrap • Salt</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Stretch plastic wrap tightly over a bowl or container.</li><li>Sprinkle a little salt on top.</li><li>Hold it over a speaker and turn up sound to watch the salt bounce.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/sound-wave-salt-dance.html">Open Page</a><a class="btn" href="assets/images/experiment-sound-wave-salt-dance.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy">
+<a aria-label="View full size image of Chris-tastic Static Spark Show" class="exp-image-link" href="assets/images/experiment-static-spark-show.png" target="_blank"><img alt="Chris-tastic Static Spark Show poster" src="assets/images/experiment-static-spark-show.png"/></a>
+<h3>Chris-tastic Static Spark Show</h3>
+<p>Use a balloon and paper bits to show static electricity in action.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy</span><span aria-label="Difficulty 1 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Balloon • Small paper bits • Dry hair or fabric</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Blow up a balloon and rub it on hair or fabric.</li><li>Hold it near small paper bits.</li><li>Watch the paper jump and stick because of static electricity.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/static-spark-show.html">Open Page</a><a class="btn" href="assets/images/experiment-static-spark-show.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Medium">
+<a aria-label="View full size image of Strawberry DNA Discovery" class="exp-image-link" href="assets/images/experiment-strawberry-dna-discovery.png" target="_blank"><img alt="Strawberry DNA Discovery poster" src="assets/images/experiment-strawberry-dna-discovery.png"/></a>
+<h3>Strawberry DNA Discovery</h3>
+<p>Mash strawberries and pull out stringy DNA you can see.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Medium</span><span aria-label="Difficulty 3 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Strawberries • Zip bag • Dish soap • Salt • Rubbing alcohol • Coffee filter</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Mash strawberries in a bag with a little soap and salt solution.</li><li>Filter the mixture into a clear cup.</li><li>Slowly add cold rubbing alcohol and spool up the DNA strands.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/strawberry-dna-discovery.html">Open Page</a><a class="btn" href="assets/images/experiment-strawberry-dna-discovery.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy-Medium">
+<a aria-label="View full size image of Test Tube Rainbow Stack" class="exp-image-link" href="assets/images/experiment-test-tube-rainbow.png" target="_blank"><img alt="Test Tube Rainbow Stack poster" src="assets/images/experiment-test-tube-rainbow.png"/></a>
+<h3>Test Tube Rainbow Stack</h3>
+<p>Build a bright test tube rainbow and practice careful pouring and color order.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy-Medium</span><span aria-label="Difficulty 2 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Test tubes • Colored water • Rack • Dropper</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Fill several test tubes with different colors of water.</li><li>Arrange them in rainbow order in a rack.</li><li>Compare shades, layers, and mixing ideas.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/test-tube-rainbow-stack.html">Open Page</a><a class="btn" href="assets/images/experiment-test-tube-rainbow.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy">
+<a aria-label="View full size image of Toothpick Star Burst" class="exp-image-link" href="assets/images/experiment-toothpick-star-burst.png" target="_blank"><img alt="Toothpick Star Burst poster" src="assets/images/experiment-toothpick-star-burst.png"/></a>
+<h3>Toothpick Star Burst</h3>
+<p>Split toothpicks and watch them spring open into star shapes.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy</span><span aria-label="Difficulty 1 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Toothpicks • Bowl of water</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Break toothpicks almost in half without separating them.</li><li>Arrange them in a star pattern in a bowl.</li><li>Drip water onto the middle and watch them open up.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/toothpick-star-burst.html">Open Page</a><a class="btn" href="assets/images/experiment-toothpick-star-burst.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy-Medium">
+<a aria-label="View full size image of Walking Water Rainbow" class="exp-image-link" href="assets/images/experiment-walking-water-rainbow.png" target="_blank"><img alt="Walking Water Rainbow poster" src="assets/images/experiment-walking-water-rainbow.png"/></a>
+<h3>Walking Water Rainbow</h3>
+<p>Colored water climbs paper towels and travels between cups.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy-Medium</span><span aria-label="Difficulty 2 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Cups • Water • Food coloring • Paper towels</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Place colored water in spaced-out cups.</li><li>Bridge the cups with folded paper towels.</li><li>Watch the colors walk into the empty cups over time.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/walking-water-rainbow.html">Open Page</a><a class="btn" href="assets/images/experiment-walking-water-rainbow.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy-Medium">
+<a aria-label="View full size image of Water Fireworks Jar" class="exp-image-link" href="assets/images/experiment-water-fireworks-jar.png" target="_blank"><img alt="Water Fireworks Jar poster" src="assets/images/experiment-water-fireworks-jar.png"/></a>
+<h3>Water Fireworks Jar</h3>
+<p>Create colorful “fireworks” floating down through water.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy-Medium</span><span aria-label="Difficulty 2 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Clear jar of water • Small cup of oil • Food coloring • Fork</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Fill a clear jar with water.</li><li>In a small cup, mix a little oil with drops of food coloring.</li><li>Pour the mixture into the jar and watch the colors burst downward.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/water-fireworks-jar.html">Open Page</a><a class="btn" href="assets/images/experiment-water-fireworks-jar.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Medium">
+<a aria-label="View full size image of Build a Water Filter" class="exp-image-link" href="assets/images/experiment-build-water-filter.png" target="_blank"><img alt="Build a Water Filter poster" src="assets/images/experiment-build-water-filter.png"/></a>
+<h3>Build a Water Filter</h3>
+<p>Layer gravel, sand, and cotton to filter dirty water and compare the before-and-after results.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Medium</span><span aria-label="Difficulty 3 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Clear plastic bottle • Scissors • Gravel • Sand • Cotton balls or coffee filter • Dirty water</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Cut the bottom off a plastic bottle and turn it upside down like a funnel.</li><li>Layer cotton, sand, and gravel inside the bottle.</li><li>Slowly pour dirty water through the filter into a clean cup and compare the results.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/build-water-filter.html">Open Page</a><a class="btn" href="assets/images/experiment-build-water-filter.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy">
+<a aria-label="View full size image of Paper Cup Telephone" class="exp-image-link" href="assets/images/experiment-paper-cup-telephone.png" target="_blank"><img alt="Paper Cup Telephone poster" src="assets/images/experiment-paper-cup-telephone.png"/></a>
+<h3>Paper Cup Telephone</h3>
+<p>Use two paper cups and a string to hear how sound travels in vibrations.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy</span><span aria-label="Difficulty 1 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> 2 paper cups • String • Tape or paper clips • Pencil</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Poke a small hole in the bottom of each cup.</li><li>Thread the string through both cups and secure the ends.</li><li>Pull the string tight while one person talks and the other listens.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/paper-cup-telephone.html">Open Page</a><a class="btn" href="assets/images/experiment-paper-cup-telephone.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Medium">
+<a aria-label="View full size image of Balloon Car Racer" class="exp-image-link" href="assets/images/experiment-balloon-car-racer.png" target="_blank"><img alt="Balloon Car Racer poster" src="assets/images/experiment-balloon-car-racer.png"/></a>
+<h3>Balloon Car Racer</h3>
+<p>Build a simple balloon-powered car and race it to see how thrust makes it move.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Medium</span><span aria-label="Difficulty 3 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Cardboard or lightweight base • 4 wheels • 2 straws • Skewers or axles • Balloon • Tape</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Build a small rolling car using the base, wheels, and axles.</li><li>Tape a straw and balloon to the top of the car.</li><li>Inflate the balloon through the straw, let go, and race the car forward.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/balloon-car-racer.html">Open Page</a><a class="btn" href="assets/images/experiment-balloon-car-racer.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy">
+<a aria-label="View full size image of Growing Gummy Bear Lab" class="exp-image-link" href="assets/images/experiment-growing-gummy-bear-lab.png" target="_blank"><img alt="Growing Gummy Bear Lab poster" src="assets/images/experiment-growing-gummy-bear-lab.png"/></a>
+<h3>Growing Gummy Bear Lab</h3>
+<p>Soak gummy bears in different liquids and compare how much they grow or change.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy</span><span aria-label="Difficulty 1 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Gummy bears • Water • Salt water • Juice or soda • Clear cups</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Place one gummy bear in each cup.</li><li>Fill the cups with different liquids.</li><li>Wait several hours or overnight, then compare the sizes and textures.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/growing-gummy-bear-lab.html">Open Page</a><a class="btn" href="assets/images/experiment-growing-gummy-bear-lab.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy-Medium">
+<a aria-label="View full size image of Balloon-Powered Zipline" class="exp-image-link" href="assets/images/experiment-balloon-powered-zipline.png" target="_blank"><img alt="Balloon-Powered Zipline poster" src="assets/images/experiment-balloon-powered-zipline.png"/></a>
+<h3>Balloon-Powered Zipline</h3>
+<p>Send a balloon zooming down a string zipline to explore thrust and motion.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy-Medium</span><span aria-label="Difficulty 2 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Balloon • Long string • Straw • Tape • 2 anchor points</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Thread a straw onto a long piece of string and pull the string tight.</li><li>Tape an inflated balloon to the straw without tying the balloon closed.</li><li>Let go and watch the balloon zip along the line.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/balloon-powered-zipline.html">Open Page</a><a class="btn" href="assets/images/experiment-balloon-powered-zipline.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Medium-Hard">
+<a aria-label="View full size image of Magnetic Slime Lab" class="exp-image-link" href="assets/images/experiment-magnetic-slime-lab.png" target="_blank"><img alt="Magnetic Slime Lab poster" src="assets/images/experiment-magnetic-slime-lab.png"/></a>
+<h3>Magnetic Slime Lab</h3>
+<p>Make slime that stretches and moves when a magnet gets close.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Medium-Hard</span><span aria-label="Difficulty 4 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> White school glue • Liquid starch or slime activator • Black iron oxide powder or iron filings • Food coloring optional • Strong magnet</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Mix glue with a little iron oxide powder until it is evenly blended.</li><li>Add slime activator and stir until the slime forms.</li><li>Move a strong magnet near the slime and watch it stretch and rise.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/magnetic-slime-lab.html">Open Page</a><a class="btn" href="assets/images/experiment-magnetic-slime-lab.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy-Medium">
+<a aria-label="View full size image of Ramp Race Gravity Test" class="exp-image-link" href="assets/images/experiment-ramp-race-gravity-test.png" target="_blank"><img alt="Ramp Race Gravity Test poster" src="assets/images/experiment-ramp-race-gravity-test.png"/></a>
+<h3>Ramp Race Gravity Test</h3>
+<p>Race toy cars down ramps at different heights and compare how gravity affects speed.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy-Medium</span><span aria-label="Difficulty 2 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Toy cars • Ramp pieces or boards • Books or boxes for height • Stopwatch</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Set up ramps at different heights.</li><li>Release the cars from the same starting point.</li><li>Time each run and compare which ramp makes the car go fastest.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/ramp-race-gravity-test.html">Open Page</a><a class="btn" href="assets/images/experiment-ramp-race-gravity-test.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Medium-Hard">
+<a aria-label="View full size image of Rock Candy Crystal Grower" class="exp-image-link" href="assets/images/experiment-rock-candy-crystal-grower.png" target="_blank"><img alt="Rock Candy Crystal Grower poster" src="assets/images/experiment-rock-candy-crystal-grower.png"/></a>
+<h3>Rock Candy Crystal Grower</h3>
+<p>Grow sparkling sugar crystals on a stick and watch crystals form over time.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Medium-Hard</span><span aria-label="Difficulty 4 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Sugar • Water • Saucepan • Jar • Wooden skewer or stick • Clothespin</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>With adult help, heat water and dissolve lots of sugar to make a supersaturated solution.</li><li>Pour the solution into a jar and place the skewer inside without touching the sides.</li><li>Let the jar sit for several days and watch crystals grow on the stick.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/rock-candy-crystal-grower.html">Open Page</a><a class="btn" href="assets/images/experiment-rock-candy-crystal-grower.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy">
+<a aria-label="View full size image of Color Mixing Ice Cubes" class="exp-image-link" href="assets/images/experiment-color-mixing-ice-cubes.png" target="_blank"><img alt="Color Mixing Ice Cubes poster" src="assets/images/experiment-color-mixing-ice-cubes.png"/></a>
+<h3>Color Mixing Ice Cubes</h3>
+<p>Freeze colored ice cubes and melt them together to watch new colors appear.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy</span><span aria-label="Difficulty 1 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Ice cube tray • Water • Food coloring • Bowls or trays</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Make red, yellow, and blue ice cubes and freeze them.</li><li>Place different colors together in a bowl or tray.</li><li>Watch the cubes melt and see which new colors appear as they mix.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/color-mixing-ice-cubes.html">Open Page</a><a class="btn" href="assets/images/experiment-color-mixing-ice-cubes.png" target="_blank">View Full Poster</a></div>
+</div><div class="exp-card" data-difficulty="Easy-Medium">
+<a aria-label="View full size image of Cup Tower Engineering Challenge" class="exp-image-link" href="assets/images/experiment-cup-tower-engineering-challenge.png" target="_blank"><img alt="Cup Tower Engineering Challenge poster" src="assets/images/experiment-cup-tower-engineering-challenge.png"/></a>
+<h3>Cup Tower Engineering Challenge</h3>
+<p>Build the tallest tower you can using only paper cups and index cards.</p>
+<div class="difficulty"><div class="diff-title">Difficulty</div><div class="difficulty-row"><span class="diff-label">Easy-Medium</span><span aria-label="Difficulty 2 out of 5" class="diff-bar"><span class="diff-block filled"></span><span class="diff-block filled"></span><span class="diff-block"></span><span class="diff-block"></span><span class="diff-block"></span></span></div><div class="diff-scale">Easy <span>to</span> Hard</div></div>
+<p class="mini"><strong>Supplies:</strong> Paper cups • Index cards • Flat table</p>
+<div class="step-box"><strong>How To Do It:</strong><ol class="step-preview"><li>Set out a stack of cups and index cards.</li><li>Take turns stacking cups and laying cards to build upward.</li><li>Test how tall your tower can go before it falls.</li></ol></div>
+<div class="exp-actions"><a class="btn" href="experiments/cup-tower-engineering-challenge.html">Open Page</a><a class="btn" href="assets/images/experiment-cup-tower-engineering-challenge.png" target="_blank">View Full Poster</a></div>
+</div></div>
+</section>
+<footer class="footer">
+<strong>Chris-tastic World! Official Office Site</strong><br/>
+        Inspiring Science • Encouraging Discovery • Having Fun<br/>
+        Science fun, kid-friendly experiments, and hands-on discovery.
+        <div class="oldbadges"><span>HTML 4.0 GOODIES ✓</span><span>MADE WITH NOTEPAD ✎</span><span>KIDS LOVE SCIENCE! ⚗</span></div>
+</footer>
+</main>
+</div>
+</div>
+<script src="assets/site.js"></script>
+</body>
+</html>
