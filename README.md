@@ -2,6 +2,16 @@
 
 A colorful, retro-inspired science activity website for children and families, styled after late-1990s and early-2000s web portals.
 
+## Homepage screenshots
+
+A desktop-and-mobile preview captured from the website files:
+
+![Chris-tastic World homepage — desktop and mobile screenshots](docs/homepage-preview.webp)
+
+*Preview image of the site's homepage. A successful GitHub Pages deployment is required for the public site to be live.*
+
+
+
 ## Website contents
 
 The current complete local site package contains **55 science experiment pages** with posters, supplies, step-by-step instructions, five-block difficulty indicators, and print controls.
@@ -18,11 +28,11 @@ Other planned/present sections include:
 
 This is a static HTML/CSS/JavaScript website. The website files belong at the **repository root** with `index.html` alongside `experiments.html`, `videos.html`, and the `assets/` and `experiments/` folders.
 
-A GitHub Pages Actions workflow is included at `.github/workflows/deploy-pages.yml`. In GitHub, open **Settings → Pages**, select **GitHub Actions** as the build/deployment source, and verify Actions and Pages deployment permissions. When a complete site is present on the `main` branch, GitHub Pages can normally serve it at:
+To publish on GitHub Pages, open **Settings → Pages**, choose **Deploy from a branch** as the source, then select **main** and **/(root)**. A manual GitHub Actions workflow is also provided at `.github/workflows/deploy-pages.yml`. When a complete site is present on the `main` branch, GitHub Pages can normally serve it at:
 
 https://rice2k.github.io/Chris-Tastic-World/
 
-**Publishing status:** This README alone does not mean the complete website is uploaded or live. Check the repository files, Pages settings, and deployment workflow status.
+**Publishing status:** The full website files are uploaded. A working public GitHub Pages deployment still needs to be confirmed in repository Pages settings.
 
 ## Local preview
 
